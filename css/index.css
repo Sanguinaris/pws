@@ -2,8 +2,9 @@ body {
     font-family: Helvetica;
     background-color: dimgray;
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 #navigator {
@@ -13,28 +14,6 @@ body {
     justify-content: space-between;
 }
 
-.ye-oldy-button {
-    color: white;
-    text-decoration: none;
-    border: ridge 3px;
-    box-sizing: border-box;
-    background-blend-mode: color;
-    display: inline-block;
-    height: 40px;
-}
-
-.buttony-buttons {
-    display: inline-block;
-    width: 100px;
-}
-
-.top-menu-button {
-    margin-right: 5px;
-}
-
-.side-menu-button {
-    margin-top: 10px;
-}
 
 #help {
     display: inline-block;
@@ -56,6 +35,8 @@ body {
     background-color: white;
     flex: 0.9;
     height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 #socials {

@@ -1,0 +1,45 @@
+
+.ye-oldy-button {
+    color: white;
+    text-decoration: none;
+    border: solid 3px;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: gray;
+    border-right-color: gray;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 40px;
+    background-color: darkgray;
+}
+
+.ye-oldy-button:active {
+    border-top-color: darkgray;
+    border-left-color: darkgray;
+    border-bottom-color: white;
+    border-right-color: white;
+    background-color: gray;
+}
+
+.buttony-buttons {
+    display: inline-block;
+    width: 100px;
+}
+
+.top-menu-button {
+    margin-right: 5px;
+}
+
+.side-menu-button {
+    margin-top: 10px;
+}
+
+.navigation-button {
+    display: inline-block;
+    width: 50;
+}
+
+/*https://codepen.io/sosuke/pen/Pjoqqp for filter vals*/
+.arrow-filter {
+    filter: invert(100%)
+}
