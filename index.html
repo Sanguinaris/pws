@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Personal Website :(</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/button.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -17,7 +20,9 @@
     <h1 id="title">Hello!</h1>
     <div id="content">
         <div id="hero">
-            <img src="./res/keyboard-cat.gif" />
+            <video autoplay="1" loop="1" muted="1">
+                <source src="./res/keyboard-cat.webm"/>
+            </video>
         </div>
         <div id="socials">
             <a rel="me" href="https://m.fa.gl/@sangu" class="ye-oldy-button buttony-buttons side-menu-button">Mastodon</a>
@@ -28,9 +33,9 @@
     </div>
     <div id="frame">
         <a href="javascript:history.back()" class="ye-oldy-button navigation-button"><img src="./res/triangle.svg"
-                class="arrow-filter" style="transform: scale(-1, 1);" /></a>
+                class="arrow-filter" style="transform: scale(-1, 1);" loading="lazy" aria-label="navigate backwards" alt="arrow pointing left"/></a>
         <a href="javascript:history.forward()" class="ye-oldy-button navigation-button"><img src="./res/triangle.svg"
-                class="arrow-filter" /></a>
+                class="arrow-filter" loading="lazy" aria-label="navigate forward" alt="arrow pointing right" /></a>
     </div>
 </body>
 
