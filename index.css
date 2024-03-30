@@ -1,0 +1,71 @@
+body {
+    font-family: Helvetica;
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#navigator {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+
+.ye-oldy-button {
+    color: white;
+    text-decoration: none;
+    border: ridge 3px;
+    box-sizing: border-box;
+    background-blend-mode: color;
+    display: inline-block;
+    height: 40px;
+}
+
+.buttony-buttons {
+    display: inline-block;
+    width: 100px;
+}
+
+.top-menu-button {
+    margin-right: 5px;
+}
+
+.side-menu-button {
+    margin-top: 10px;
+}
+
+#help {
+    display: inline-block;
+    width: 50px;
+}
+
+#title {
+    color: white;
+    margin-top: 0px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#hero {
+    background-color: white;
+    flex: 0.9;
+    height: 300px;
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+}
+
+#frame {
+    display: flex;
+    width: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html",
+            "firefoxExecutable": "C:\\Users\\wieic\\AppData\\Local\\Microsoft\\WindowsApps\\firefox.exe",
+            "reloadOnChange": {
+                "watch": "${workspaceFolder}/**/*",
+                "ignore": "**/node_modules/**"
+            }
+        }
+    ]
+}
