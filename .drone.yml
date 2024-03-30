@@ -13,4 +13,4 @@ steps:
         from_secret: minio_secret
     commands:
     - mc alias s minio $MINIO_SERVER_HOST $MINIO_SERVER_ACCESS_KEY $MINIO_SERVER_SECRET_KEY
-    - mc mirror --remove --overwrite . minio/pws
+    - mc mirror --remove --overwrite * minio/pws
