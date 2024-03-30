@@ -1,0 +1,16 @@
+kind: pipeline
+name: default
+type: kubernetes
+
+steps:
+  - name: publish
+    image: bitnami/minio-client
+    environment:
+      MINIO_SERVER_HOST: https://s3.home.fa.gl/
+      MINIO_SERVER_ACCESS_KEY:
+        from_secret: minio_access
+      MINIO_SERVER_SECRET_KEY:
+        from_secret: minio_secret
+    commands:
+    - mc alias s minio $MINIO_SERVER_HOST $MINIO_SERVER_ACCESS_KEY $MINIO_SERVER_SECRET_KEY
+    - mc mirror --remove --overwrite dash minio/pws
