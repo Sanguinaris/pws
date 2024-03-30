@@ -12,6 +12,6 @@ steps:
       MINIO_SERVER_SECRET_KEY:
         from_secret: minio_secret
     commands:
-    - mkdir lol && cp -avr * lol
+    - rm -rf /tmp/lol && mkdir /tmp/lol && cp -avr * /tmp/lol
     - mc alias s minio $MINIO_SERVER_HOST $MINIO_SERVER_ACCESS_KEY $MINIO_SERVER_SECRET_KEY
-    - mc mirror --remove --overwrite lol minio/pws
+    - mc mirror --remove --overwrite /tmp/lol minio/pws
